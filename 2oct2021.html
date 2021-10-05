@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2oct2021</title>
+        <style>
+
+        </style>
+
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div id="a7">welcome</div>
+        <script>
+            // writing the javascript code in html
+            document.getElementById('a7').innerHTML= 'welcome to javascript'
+            
+            var x=10 //declaring and initializition the variable X
+            var y   //declaring the variable
+             y=20   // adding the variables with '+' operator
+             z = x+y // adding the variables and storing thr value in another variable Z
+             console.log(z)
+
+             let a=7  //declaring with let keyword with initialization
+             let b  //declaring with let keyword
+             b=4
+             c= a-b //subtracting the variables using '-' operator 
+             console.log(c)
+             let i  // now creating two variables using let key word and multiplying them 
+              let j
+              i =4
+              j =7
+              k= i*j // multiplication of two variables by using '*' operator
+              console.log(k)
+                /*when creating a variable using const keyword then const always initialized at the
+                time of declaration */
+              const p=10 //declaration of variable p
+              const q=2  //declaration of variable q
+              var r
+              r=p/q      // dividing the two variables by using '/' opoerator storing them on r
+              console.log(r)
+
+            /*Now we are doing similar above operations by using functions*/
+
+            // add function
+            function add(x,y){  // function defination i,e, we are defining the function
+                console.log(x+y); //function calling when we call a function we passed actual parameters
+            }
+            add(10,20);
+            add(50,50);
+            add(20,40);
+            add(70,40);
+            // sub function
+            function sub(a,b){ //function defination
+                console.log(a-b) //function calling
+            }
+            sub(20,5)
+            sub(70,40)
+            // mul function
+            function mul(p,q){ // defining the mul function
+                console.log(p*q);
+            }
+            mul(4,7);
+            mul(7,7);
+            // divide function
+            function div(i,j){
+            console.log(i/j)
+            }
+            div(40,5);
+            div(14,2);
+        </script>
+    </body>
+</html>
