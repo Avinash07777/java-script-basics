@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+
+        <script>
+            // declaration of array using var 
+            var companies = ["hyundai",'maruti','toyota',"mahindra","jeep"]
+            console.log(companies) // passing the whole array in console
+            alert("hello "+companies[4]+",what's going on") //passing a particular index no in array
+            console.log("hello "+companies[3]+" what's going on")
+            console.log("hello "+companies[0]+" what's going on")
+            console.log("hello "+companies[2]+" what's going on")
+            console.log("hello "+companies[1]+" what's going on")
+            // Declaration of array using let
+            let students =["Avinash7","RITIK","ABHISHEK","AAYUSHI","AVI"] // declaration of array
+            function stud(s){ // function defination
+                console.log("hello "+s+" welcome to javascript tutorials")
+            }
+            stud(students[1]) // function calling
+            /*Now we are using for loop for executing the array no of times*/
+
+            for(let i=0;i<=4;i++){   //for loop start
+                stud(students[i]);   //  again we are calling a function inside the loop
+            }                        //for loop close
+        </script>
+    </head>
+    <body>
+        
+        <script>
+
+        </script>
+    </body>
+</html>
