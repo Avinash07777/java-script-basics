@@ -10,21 +10,24 @@
         </style>
 
         <script>
-            // declaration of array using var 
+            // declaration of array using var keyword
             var companies = ["hyundai",'maruti','toyota',"mahindra","jeep"]
             console.log(companies) // passing the whole array in console
             alert("hello "+companies[4]+",what's going on") //passing a particular index no in array
-            console.log("hello "+companies[3]+" what's going on")
-            console.log("hello "+companies[0]+" what's going on")
+            console.log("hello "+companies[3]+" what's going on") // here we repeating the code
+            console.log("hello "+companies[0]+" what's going on") // again
             console.log("hello "+companies[2]+" what's going on")
             console.log("hello "+companies[1]+" what's going on")
-            // Declaration of array using let
+
+
+            // Declaration of array using let keyword
             let students =["Avinash7","RITIK","ABHISHEK","AAYUSHI","AVI"] // declaration of array
             function stud(s){ // function defination
                 console.log("hello "+s+" welcome to javascript tutorials")
             }
             stud(students[1]) // function calling
-            /*Now we are using for loop for executing the array no of times*/
+            /*Now we are using for loop for executing the array no of times
+            for loop is used for executing a task for a no of times*/
 
             for(let i=0;i<=4;i++){   //for loop start
                 stud(students[i]);   //  again we are calling a function inside the loop
