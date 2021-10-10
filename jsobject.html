@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+
+        <script>
+
+        </script>
+    </head>
+    <body>
+
+
+        <script>
+            /* javascript objects contain two members
+            {
+                property:value,
+                property:value,
+                functions
+            }
+            */
+           var family = {               //object body
+               name:"Avinash",          //property:value,
+               "surnme":"Chouhan",      //property:value,
+               'contact':'7974766482',  //property:value,
+               friends:["sachin","aman","harsh","ram","shivam"], //js object containing array
+               members:[  //we use array of objects to store multiple values
+                    {
+                        name:"B.L. chouhan",
+                        contact:"9977126742",
+                        working:"govt officer",
+                        place:'jamuniya kalan',
+                    },
+                    {
+                        name:"varsha rani chouhan",
+                        contact:"7247726815",
+                        working:"housewife",
+                        place:"jamuniya kalan",
+                    },
+                    {
+                        name:"Amit chouhan",
+                        contact:"7999148813",
+                        working:"safety manager",
+                        place:"gujrat"
+                    },
+                    {
+                        name:"apeksha dubey",
+                        contact:"7000220216",
+                        working:"housewife",
+                        placer:"nagpur"
+                    }
+               ],
+            friendsinfo:[ //again we are using array of objects to store friends info of avinash
+                    {
+                        name:"sachin parashar",
+                        contact:"8464715446",
+                        sports:"travelling",
+                        favcolor:"red"            
+                    },
+                    {
+                        name:"aman solanki",
+                        contact:"9301559751",
+                        sports:"volleyball",
+                        favcolor:"blue"       
+                    },
+                    {
+                        name:"harsh shrivastav",
+                        contact:"7974358256",
+                        sports:"cricket",
+                        favcolor:"black"       
+                    },
+                    {
+                        name:"ramakant chouhan",
+                        contact:"9847561465",
+                        sports:"travelling",
+                        favcolor:"yellow"       
+                    }
+                ],
+                teachers:[
+                    {
+                        "name":"yagvendra singh",
+                        "subject":"biology",
+                        "contact":"9876543210",
+                        "salary":25000
+                    },
+                    {
+                        "name":"Mayank singh",
+                        "subject":"maths",
+                        "contact":"7773850999",
+                        "salary":22000
+                    },
+                    {
+                        "name":"tarun ojha",
+                        "subject":"hindi",
+                        "contact":"9425462874",
+                        "salary":27700
+                    },
+                    {
+                        "name":"Dr. Manisha Agarwal",
+                        "subject":"english",
+                        "contact":"7974766482",
+                        "salary":34000
+                    },
+                    {
+                        "name":"sanjay apte",
+                        "subject":"chemistry",
+                        "contact":"8817459624",
+                        "salary":47000
+                    }
+                ]
+               
+           }
+           //alert(family.name);
+           console.log(family.name+family.surnme)//concating two properties in a same console
+           console.log(family.friends)
+           console.log(family.name+" have"+family.friends.length+" friends")
+           console.log("father of avinash "+ family.members[0].name) //calling a particular value array of object
+           console.log("mother of avinash "+ family.members[1].name)
+           console.log("brother of avinash "+ family.members[2].name)
+           console.log("sister of avinash "+ family.members[3].name)
+           
+           //using for loop for iterate the no of values
+           for(i=0;i<family.members.length;i++){
+                console.log(family.members[i].name+" "+family.members[i].contact+" "+family.members[i].working+" "+family.members[i].place);
+           }
+           for(i=0;i<family.friendsinfo.length;i++){
+           console.log(family.friendsinfo[i].name+" "+family.friendsinfo[i].contact+" "+family.friendsinfo[i].sports+" "+family.friendsinfo[i].favcolor);
+           }
+           /*
+           suppose if you want to print  the contact number of avinash mother 
+           */
+          console.log("contact number of avinash mother "+family.members[1].contact)
+          // if you want to print sports activity of 3rd friend of avinash
+          console.log("3rd friend sport"+family.friendsinfo[2].sports)
+
+          //if you want the full information about sachin parashar
+          for(i=0;i<1;i++){
+              console.log(family.friendsinfo[i].name+" "+family.friendsinfo[i].contact+" "+family.friendsinfo[i].sports+" "+family.friendsinfo[i].favcolor);
+          }
+          /*
+          now we print the teachers of avinash 
+          and the we solve the following questions
+          Q1. who teach english?
+          Q2. which teacher having highest salary
+          Q3. what is the name of biology teacher
+          Q4. what is the contact no of maths teacher
+          */
+           for(i=0;i<family.teachers.length;i++){
+               console.log(family.teachers[i].name+" "+family.teachers[i].subject+" "+family.teachers[i].contact+" "+family.teachers[i].salary);
+           }
+           console.log("who teach english = "+family.teachers[3].name)
+           console.log("which teacher having highest salary = "+family.teachers[4].name)
+           console.log("the name of biology teacher = "+family.teachers[0].name)
+           console.log("the contact no of maths teacher = "+family.teachers[1].contact)
+        </script>
+    </body>
+</html>
